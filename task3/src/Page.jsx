@@ -1,7 +1,7 @@
 import React from 'react';
 import Info from './Info';
 
-const btn1 = 'Iphone 13 - Price is 500$. Available in 2 colors';
+const btn1 = 'Price is 500$. Available in 2 colors';
 const btn2 = 'Price is 650$. Not available.';
 
 class Page extends React.Component {
