@@ -3,11 +3,11 @@ import Online from './Online';
 
 class Status extends React.Component {
   render() {
-    const { isOnline } = this.props;
-    if (isOnline) {
-      return <Online />;
-    } else {
+    const { isOffline } = this.props;
+    if (isOffline === false) {
       return <Offline />;
+    } else {
+      return <Online />;
     }
   }
 }
