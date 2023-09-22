@@ -22,7 +22,7 @@ class Page extends React.Component {
     return (
       <div className="page">
         <div className="text">
-          <Info info={this.state.info} />{' '}
+          <Info info={this.state.info} />
         </div>
         <div className="actions">
           <button className="btn" onClick={() => this.setInfo(btn1)}>
