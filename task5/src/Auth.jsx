@@ -11,24 +11,18 @@ class Auth extends React.Component {
       isLoggedIn: false,
     };
   }
-
   handleLogin = () => {
     // Показать спиннер
     this.setState({ isLoading: true });
 
+    // Через 2 секунды вернуться к исходному состоянию
     setTimeout(() => {
       this.setState({ isLoading: false, isLoggedIn: true });
     }, 2000);
   };
 
   handleLogout = () => {
-    // Показать спиннер
-    this.setState({ isLoading: true });
-
-    // Через 2 секунды снова отобразить кнопку Login и скрыть спиннер
-    setTimeout(() => {
-      this.setState({ isLoading: false, isLoggedIn: false });
-    }, 2000);
+    this.setState({ isLoggedIn: false });
   };
 
   render() {
