@@ -4,9 +4,10 @@ import Online from './Online';
 class Status extends React.Component {
   render() {
     const { isOnline } = this.props;
-
-    {
-      isOnline ? <Online /> : <Offline />;
+    if (isOnline) {
+      return <Online />;
+    } else {
+      return <Offline />;
     }
   }
 }
