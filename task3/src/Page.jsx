@@ -2,7 +2,7 @@ import React from 'react';
 import Info from './Info';
 
 const btn1 = 'Price is 500$. Available in 2 colors';
-const btn2 = 'Price is 650$. Not available in 1 color';
+const btn2 = 'Price is 650$. Not available';
 
 class Page extends React.Component {
   constructor(props) {
@@ -31,7 +31,7 @@ class Page extends React.Component {
           <button className="btn" onClick={() => this.setInfo(btn2)}>
             IPhone 13 Pro
           </button>
-          <button className="btn" onClick={() => this.setInfo('')}>
+          <button className="btn" onClick={() => this.setInfo(null)}>
             Clear
           </button>
         </div>
